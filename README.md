@@ -1,12 +1,12 @@
-#AgriData Explorer – District-Level Crop Analytics in India
+# AgriData Explorer – District-Level Crop Analytics in India
 
-##Project Overview
+## Project Overview
 
 **AgriData Explorer** is an end-to-end data analytics project aimed at understanding and visualizing the agricultural performance of Indian districts using data from ICRISAT. The project covers **data cleaning**, **exploratory data analysis**, **predictive modeling**, **SQL querying**, and **interactive dashboards in Power BI**.
 
 ---
 
-##Dataset
+## Dataset
 
 **Source:** [ICRISAT - District Level Crop Data](https://www.icrisat.org)
 
@@ -18,7 +18,7 @@
 
 ---
 
-##Problem Statement
+## Problem Statement
 
 To build an interactive and intelligent system that helps:
 - Identify top-performing districts and states by crop
@@ -40,15 +40,15 @@ To build an interactive and intelligent system that helps:
 
 ---
 
-##Project Workflow
+## Project Workflow
 
-###1. Data Cleaning & Preparation (Python)
+### 1. Data Cleaning & Preparation (Python)
 - Replaced all `-1` values with `0` to handle invalid entries
 - Standardized column names (snake_case)
 - Removed duplicates and missing values
 - Saved as `ICRISATcleaned.csv`
 
-###2. Exploratory Data Analysis (EDA)
+### 2. Exploratory Data Analysis (EDA)
 Plots created using `Matplotlib`, `Seaborn`, and `Plotly`:
 - Top 5 Wheat Producing States (Bar + Pie Chart)
 - Sunflower, Sugarcane, Millet, Sorghum Trends
@@ -56,18 +56,18 @@ Plots created using `Matplotlib`, `Seaborn`, and `Plotly`:
 - Yield comparison between Rice and Wheat
 - Groundnut Production by State & District
 
-###3. SQL Analysis (MySQL)
+### 3. SQL Analysis (MySQL)
 Used a normalized SQL table (`agri_data`) inside the database `indian_agri`. Example queries:
 - Top 5 districts by wheat yield increase over 5 years
 - Cotton production growth by state
 - Yearly rice production by top 3 states
 - Groundnut production prediction for 2020 (via Python)
 
-###4. Predictive Modeling (Optional)
+### 4. Predictive Modeling (Optional)
 - Used `LinearRegression` from `sklearn` to predict missing 2020 groundnut production per district
 - Saved predictions to `groundnut_prediction_2020.csv`
 
-###5. Power BI Dashboard
+### 5. Power BI Dashboard
 Key features:
 - Filled Maps showing regional production
 - Slicers for Year, Crop, State
@@ -77,22 +77,22 @@ Key features:
 
 ---
 
-##Key Questions Answered
+## Key Questions Answered
 
-1. ✅ Year-wise trend of rice production across top 3 states
-2. ✅ Top 5 districts with maximum wheat yield growth
-3. ✅ States with highest oilseed production growth
-4. ✅ Correlation between area cultivated and production (major crops)
-5. ✅ Cotton production growth in top 5 states
-6. ✅ 🔮 Groundnut production predicted for 2020 (via ML)
-7. ✅ Average maize yield by state
-8. ✅ Total oilseed area by state
-9. ✅ Districts with highest rice yield
-10. ✅ Comparative rice vs wheat production (Top 5 states)
+1. Year-wise trend of rice production across top 3 states
+2. Top 5 districts with maximum wheat yield growth
+3. States with highest oilseed production growth
+4. Correlation between area cultivated and production (major crops)
+5. Cotton production growth in top 5 states
+6. Groundnut production predicted for 2020 (via ML)
+7. Average maize yield by state
+8. Total oilseed area by state
+9. Districts with highest rice yield
+10. Comparative rice vs wheat production (Top 5 states)
 
 ---
 
-## 📊 Power BI Visuals
+## Power BI Visuals
 
 - **Filled Maps** – Region-wise crop production
 - **Line Charts** – Yield/production trends
@@ -103,7 +103,7 @@ Key features:
 
 ---
 
-## 📄 Files & Structure
+## Files & Structure
 
 ```bash
 ├── ICRISAT-District-Level-Data.csv         # Original Dataset
